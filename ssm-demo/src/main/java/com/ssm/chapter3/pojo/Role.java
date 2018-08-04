@@ -21,4 +21,13 @@ public class Role {
 		return "Role [id=" + id + ", name=" + name + "]";
 	}
 	
+	public Role() {
+		super();
+	}
+	public Role(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	
 }

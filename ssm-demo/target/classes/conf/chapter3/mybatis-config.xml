@@ -20,7 +20,8 @@
 	</environments>
 	<!-- 映射文件 -->
 	<mappers>
-		<mapper url="file:///D:/install/workspace/ssm-demo/mappers/chapter3mapper/RoleMapper.xml"/>
+		<!-- <mapper url="file:///D:/install/workspace/ssm-demo/mappers/chapter3mapper/RoleMapper.xml"/> -->
+		<mapper resource="mappers/chapter3mapper/RoleMapper.xml"/>
 	</mappers>
 </configuration>
 
