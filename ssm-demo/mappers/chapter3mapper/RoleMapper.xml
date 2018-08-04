@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+
+<mapper namespace="com.ssm.chapter3.dao.RoleDao" >
+
+		 <insert id="insertRole" parameterType="role" >
+			insert into role (id,name) values(#{id},#{name})
+		</insert>
+		 
+		<update id="updateRole" parameterType="role"  >
+			update role set name = #{name} where id=#{id}
+		</update>
+		
+		<delete id="delectRole" parameterType="int" >
+			delete from role where id = #{id} 
+		</delete>
+		
+		<select id="getRole" parameterType="int" resultType="role" ><!-- role是之前mybatis-config.xml配置的别名指代Role类 -->
+				select id,name from role where id=#{id}
+		</select>
+		<select id="findRoles" parameterType="String" resultType="role" >
+				select id,name from role where name=#{name}
+		</select>
+		
+<!-- 注意：这里我们并没有配置SQL执行后和role的对应关系，他是如何映射的呢，其实这里采用的是自动映射的功能，只要保证SQL查询出来的字段名称和pojo中的属性名称一致
+mybatis就会自动将SQL执行后的结果映射为对应的pojo -->
+
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

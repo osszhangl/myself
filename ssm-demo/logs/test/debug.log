@@ -1,0 +1,15 @@
+org.apache.ibatis.logging.LogFactory 2018-08-03 11:29:23,407 -- DEBUG -- Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+org.apache.ibatis.datasource.pooled.PooledDataSource 2018-08-03 11:29:23,613 -- DEBUG -- PooledDataSource forcefully closed/removed all connections.
+org.apache.ibatis.datasource.pooled.PooledDataSource 2018-08-03 11:29:23,613 -- DEBUG -- PooledDataSource forcefully closed/removed all connections.
+org.apache.ibatis.datasource.pooled.PooledDataSource 2018-08-03 11:29:23,613 -- DEBUG -- PooledDataSource forcefully closed/removed all connections.
+org.apache.ibatis.datasource.pooled.PooledDataSource 2018-08-03 11:29:23,614 -- DEBUG -- PooledDataSource forcefully closed/removed all connections.
+org.apache.ibatis.transaction.jdbc.JdbcTransaction 2018-08-03 11:29:23,790 -- DEBUG -- Opening JDBC Connection
+org.apache.ibatis.datasource.pooled.PooledDataSource 2018-08-03 11:29:24,313 -- DEBUG -- Created connection 117244645.
+org.apache.ibatis.transaction.jdbc.JdbcTransaction 2018-08-03 11:29:24,313 -- DEBUG -- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6fd02e5]
+com.ssm.chapter3.dao.RoleDao.getRole 2018-08-03 11:29:24,317 -- DEBUG -- ==>  Preparing: select id,name from role where id=? 
+com.ssm.chapter3.dao.RoleDao.getRole 2018-08-03 11:29:24,393 -- DEBUG -- ==> Parameters: 1(Integer)
+com.ssm.chapter3.dao.RoleDao.getRole 2018-08-03 11:29:24,430 -- DEBUG -- <==      Total: 1
+com.ssm.chapter3.main.Chapter3Main 2018-08-03 11:29:24,431 -- DEBUG -- debug
+org.apache.ibatis.transaction.jdbc.JdbcTransaction 2018-08-03 11:29:24,432 -- DEBUG -- Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6fd02e5]
+org.apache.ibatis.transaction.jdbc.JdbcTransaction 2018-08-03 11:29:24,432 -- DEBUG -- Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6fd02e5]
+org.apache.ibatis.datasource.pooled.PooledDataSource 2018-08-03 11:29:24,433 -- DEBUG -- Returned connection 117244645 to pool.
