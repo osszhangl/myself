@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE configuration-->
+        <!--PUBLIC "-//mybatis.org//DTD Config 3.0//EN"-->
+        <!--"http://mybatis.org/dtd/mybatis-3-config.dtd">-->
+
+
+<configuration>
+
+    <!--指定数据库连接信息配置文件-->
+    <properties resource="jdbc.properties"/>
+
+    <!--指定实体类封装-->
+    <!--<typeAliases>-->
+        <!--<package name="com.itheima.domain"/>-->
+    <!--</typeAliases>-->
+
+    <environments default="mysql">
+        <environment id="mysql">
+            <!--事物管理-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--指定连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="username" value="itcastoa"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/itcast_oa"/>
+                <property name="password" value="176658"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers >
+        <!--1、指定sql映射文件路径-->
+        <!--<package name="com.itheima.dao"/>-->
+        <!--<mapper resource="com/itheima/dao/IUserDao.xml"/>-->
+
+        <!--这种指定包的方式，必须要求映射mapper文件的文件名必须和dao接口的名字一样才能使用这种方式，不然只能通过resource和url的方式指定xml
+        映射文件的位置-->
+        <!--<package name="com.itheima.dao"/>-->
+
+        <!--2、这是注解的方式-->
+        <mapper class="com.itheima.dao.IUserDao"></mapper>
+
+
+    </mappers>
+
+
+</configuration>
+

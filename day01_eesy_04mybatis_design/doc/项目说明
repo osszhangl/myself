@@ -1,0 +1,15 @@
+mybatis的自定义实现：一种是配置文件的方式xml，一种是注解的方式(这里主要改SqlMapConfig.xml、IUserDao接口、新建select类  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
